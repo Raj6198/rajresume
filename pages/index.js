@@ -9,9 +9,8 @@ class index extends Component {
     return (
       <Layout>
         <div className="parent-container">
-          <div>
-            <div className="row landing-banner mt-100vh">
-            </div>
+          <div className="row landing-banner mt-100vh">
+            
           </div>
         </div>
       </Layout>
