@@ -17,10 +17,14 @@ class index extends Component {
 
   // Change Backgroud Image funtion:
   handleBackgroundImage() {
-    this.interval = setInterval(() => {
+    this.interval = setTimeout(() => {
       this.setState({ backgroundImage: "url(/static/images/intro1.jpg)" }, () => {
-        this.interval = setInterval(() => {
-          this.setState({ backgroundImage: "url(/static/images/intro4.jpg)" })
+        this.interval = setTimeout(() => {
+          this.setState({ backgroundImage: "url(/static/images/intro4.jpg)" }, () => {
+            this.interval = setTimeout(() => {
+              this.setState({ backgroundImage: "url(/static/images/intro.jpg)" })
+            }, 12000)
+          })
         }, 8000);
       })
     }, 4000);
