@@ -21,6 +21,9 @@ html, body {
   html, body {
     font-size: 12px;
   }
+  html .navbar-nav, body .navbar-nav {
+    margin-left: 71.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -64,7 +67,6 @@ html .landing-banner,
 body .landing-banner {
   min-height: calc(110vh - 5rem);
   height: 100%;
-  background-image: url(../public/static/images/intro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
@@ -113,6 +115,26 @@ body .navbar .navbar-nav .nav-link.active {
   color: #d73651 !important;
 }
 
+html .navbar .navbar-nav .nav-link::after,
+body .navbar .navbar-nav .nav-link::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#6372ff), to(#5ca9fb));
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  content: "";
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+html .navbar .navbar-nav .nav-link:hover:after,
+body .navbar .navbar-nav .nav-link:hover:after {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .navbar .header-content {
     width: 6.063rem;
@@ -142,6 +164,25 @@ body .navbar .navbar-nav .nav-link.active {
   .header-content {
     margin-left: 0;
     margin-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .land-each-item {
+    min-width: 100%;
+    min-height: 15.125rem;
+    overflow: hidden;
+    border-radius: 0.938rem !important;
+    padding-right: 0.938rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  body .navbar-nav {
+    margin-left: 74.5rem;
   }
 }
 /*# sourceMappingURL=globals.css.map */
