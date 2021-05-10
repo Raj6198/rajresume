@@ -19,7 +19,11 @@ class mystory extends Component {
   render() {
     return (
       <Layout>
-        
+        <div className="parent-container">
+          <div className="row my-story">
+
+          </div>
+        </div>
       </Layout>
     );
   }

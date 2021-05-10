@@ -31,7 +31,7 @@ html,body {
   html,body{
       font-size: 12px;
       .navbar-nav {
-        margin-left: 71.5rem;
+        margin-left: 61.5rem;
       }
   } 
 }
@@ -65,11 +65,86 @@ html,
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
   .landing-banner {
     min-height: calc(110vh - 5rem);
     height: 100%;
+    background-color: #f8e4e4;
     // background-image: url(../public/static/images/intro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: initial;
+    overflow: hidden;
+    .home-content {
+      color: $primary-color;
+      margin-top: 305px;
+      .banner-text-animation{
+          height: 19rem;
+      }
+      h1 {
+          font-size: 3.5rem;
+          font-weight: 700;
+      }
+      .text-spac{
+        animation-name: lineheight-expand;
+        -webkit-animation-name: lineheight-expand;
+        animation-duration: 12s;
+        -webkit-animation-duration: 12s;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        display: inline-block;
+        line-height:4.5rem;
+      }
+      @keyframes background-fade {
+          0%,
+          20% {
+              background-color: rgba(215, 61, 84, 0);
+          }
+          50%,
+          100% {
+              background-color: rgba(215, 61, 84, 1);
+          }
+      }
+      @keyframes background-fade-widthdelay {
+          0%,
+          25% {
+              background-color: rgba(215, 61, 84, 0);
+          }
+          50%,
+          100% {
+              background-color: rgba(215, 61, 84, 1);
+          }
+      }
+      p {
+          font-size: 2rem;
+          line-height: 3rem;
+          font-weight: 400;
+          margin-top: 15px;
+          .first-span {
+            color: $dark-black;
+            animation: background-fade 5s linear 0s;
+            -webkit-animation: background-fade 5s linear 0s;
+            background-color: rgb(147, 174, 223);
+          }
+          .first-span{
+              padding: 0.25rem 0.625rem;
+              border-radius: 0.25rem;
+          }
+      }
+    }
+  }
+  .my-story {
+    min-height: calc(110vh - 5rem);
+    height: 100%;
+    background-color: #ddcdcd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: initial;
+    overflow: hidden;
+  }
+  .landing-myprojects {
+    min-height: calc(110vh - 5rem);
+    height: 100%;
+    background-color: #e0e4ce;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: initial;
@@ -121,6 +196,49 @@ body {
       .nav-link:hover:after {
         width: 100%;
       }
+    }
+  }
+  .contactus {
+    margin-bottom: 20rem;
+    h1 {
+      font-size: 2.0rem;
+      color: #c04545;
+    }
+    h3 {
+      margin-left: 9.5rem !important;
+      font-size: 2.125rem;
+      font-weight: 500;
+      color: #4913dd;
+      line-height: 2rem;
+    }
+  }
+  .myprojects {
+    margin-top: 7rem;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: rgb(238, 198, 198);
+    }
+    dt {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #eeecf4;
+    }
+    dt::after {
+      content: ":";
+    }
+    dd {
+      position: relative;
+      bottom: 25px;
+      width: 80rem;
+      font-size: 1.3rem;
+      margin: 0 0 0 200px;
+      padding: 0 0 0.8em 0;
+      color: #f1e0be;
+    }
+    hr {
+      width: 100rem;
+      background-color: #e41717;
     }
   }
 }
@@ -176,7 +294,7 @@ body {
           background-position: center;
       }
       .navbar-nav {
-          margin-left: 74.5rem;
+          margin-left: 63.5rem;
       }
   }
 }

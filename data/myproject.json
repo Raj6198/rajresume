@@ -1,0 +1,62 @@
+{
+    "total" : "5",
+    "project_details" : {
+        "project": [
+            {
+                "id": "1",
+                "title": "SKORUZ- VISUALIZATION",
+                "period": "2020 Jan to 2020 May",
+                "relation": "Skoruz Technologies, USA",
+                "position": "UI Developer",
+                "ui": "HTML, Css, Scss, React",
+                "tool": "Visual Studio Code",
+                "desc": "It's our internal product to cover the most of customers. In this project contains multiple parts. like recommendation books search engine. Time series forecasting graph implementation based on the data. with ease.Another part of visualization is predictive maintenance - it is vacuum machine maintenance schedule. We display the data like machine failure condition. Which time needs to maintenance with works details. Also represents the graph based on the data.",
+                "url": "https://skoruz.ai"
+            },
+            {
+                "id": "2",
+                "title": "CHUPSHOP /SKYCOOKING APPLICATION",
+                "period": "2020 Aug to 2020 Sep",
+                "relation": "Skoruz Technologies, USA",
+                "position": "UI Developer",
+                "ui": "HTML, Css, Scss, React",
+                "tool": "Eclipse, Xcode",
+                "desc": "Today the food industry is flooded with detached and sterile restaurants. Customers are seeking a unique and personalized experience. Our technology aids merchants increase efficiency and concentrate on enhancing their service commitment. We aim to aid in strengthening the customer and merchant relationship. Chupshop allows chef, restaurant or an event organizer to experiment new food and explore the market in your city. The app helps chefs host their own meals and setting up their own events and pop ups with ease, share them, take booking and process payments.For a Restaurant Chupshop supports in streamlining the business with a simple and easy to use app that takes care of tasks like order taking, kitchen management and payment with ease. It is a application designed for restaurant. Online ordering, both Restaurant and Popup. Restaurant is in US based. Customer can sign up and using the login they can make order in restaurant and popup. There are two services available, dine in and also pickup. For dine in we can choose the table and total person at the time of booking itself. If pick up, they allot some time for that. Food will be ready on that exact time which they mentioned in the application.",
+                "url": "Chupshop - App(Hybrid)"
+            },
+            {
+                "id": "3",
+                "title": "CHUPS CUSTOMER WEBSITE",
+                "period": "2020 March to Till date",
+                "relation": "Skoruz Technologies, USA",
+                "position": "UI Developer",
+                "ui": "HTML5, Css, Angular 2 & Typescript. ,React,Ionic",
+                "tool": "Visual Studio Code, Tortoise SVN version control",
+                "desc": "On line Food Store is presented as a third party which acts as mediator between users and restaurants. The users and restaurants need to register to avail the services. The user will choose a restaurant and places the order and the acknowledgement will be send through concern mail to the restaurant. Restaurants could also check orders by signing in through the registration details. On the request of user the order is send by mail. To forward Mail the Mail gateway is used which is established on the server. The other part of the project is based on the servlets and database. The servlet-container hosts the project online and database stores the registration information of users and restaurants.",
+                "url": "https://www.chups.com && Chups - Customer App(Hybrid)"
+            },
+            {
+                "id": "4",
+                "title": "CAPTON",
+                "period": "2020 Jan to 2020 May",
+                "relation": "Skoruz Technologies, USA",
+                "position": "UI Developer",
+                "ui": "HTML, Css, React",
+                "tool": "Visual Studio Code",
+                "desc": "It is fully graph representation of selected city and financial reports. As my part of work is to develop the graph by using reactjs to compare the items based on the data.",
+                "url": "https://app.capton.com"
+            },
+            {
+                "id": "5",
+                "title": "SAFEO",
+                "period": "2020 April to 2020 June",
+                "relation": "Skoruz Technologies, USA",
+                "position": "UI Developer",
+                "ui": "HTML, Css, Scss, React",
+                "tool": "Visual Studio Code",
+                "desc": "Its is the project for monitoring office works. Find if they are wear the mask, thery are in social distance and find their body temperature. To prevent the corona virus.",
+                "url": "https://app.safeo.ai"
+            }
+        ]
+    }
+}
