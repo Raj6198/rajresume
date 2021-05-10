@@ -70,4 +70,78 @@ body .landing-banner {
   background-attachment: initial;
   overflow: hidden;
 }
+
+html .navbar,
+body .navbar {
+  padding: 0.25rem 1.875rem;
+  -webkit-box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  height: 5rem;
+}
+
+html .navbar .header-content,
+body .navbar .header-content {
+  width: 6.063rem;
+  cursor: pointer;
+}
+
+html .navbar .header-content h1,
+body .navbar .header-content h1 {
+  color: #64575a;
+}
+
+html .navbar .header-content:focus,
+body .navbar .header-content:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+html .navbar .navbar-nav .nav-link,
+body .navbar .navbar-nav .nav-link {
+  font-size: 1.25rem;
+  color: #404040 !important;
+  font-weight: 500;
+  padding: 0.938rem 0;
+  margin-right: 2.5rem;
+  position: relative;
+}
+
+html .navbar .navbar-nav .nav-link.active,
+body .navbar .navbar-nav .nav-link.active {
+  color: #d73651 !important;
+}
+
+@media (min-width: 992px) {
+  .navbar .header-content {
+    width: 6.063rem;
+    margin-right: 5.313rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-content {
+    margin-right: 3.375rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-content {
+    margin-left: -2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .header-content {
+    width: 6.063rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header-content {
+    margin-left: 0;
+    margin-right: 0 !important;
+  }
+}
 /*# sourceMappingURL=globals.css.map */

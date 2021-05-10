@@ -66,10 +66,114 @@ body {
   .landing-banner {
     min-height: calc(110vh - 5rem);
     height: 100%;
-    background-image: url(../public/static/images/intro.jpg);
+    // background-image: url(../public/static/images/intro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: initial;
     overflow: hidden;
+  }
+  .navbar {
+    padding: 0.25rem 1.875rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.09);
+    background-color: $white-color;
+    height: 5rem;
+    .header-content {
+        width: 6.063rem;
+        cursor: pointer;
+        h1 {
+          color: #64575a
+        }
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            font-size: $font-20;
+            color: $light-color !important;
+            font-weight: 500;
+            padding: 0.938rem 0;
+            margin-right: 2.5rem;
+            position: relative;
+            &.active {
+                color: $primary-color !important;
+            }
+        }
+    }
+    .navbar-nav {
+      .nav-link::after {
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+        content: "";
+        transition: width 0.2s;
+      }
+    }
+    .navbar-nav {
+      .nav-link:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    .header-content {
+        width: 6.063rem;
+        margin-right: 5.313rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-content {
+    margin-right: 3.375rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-content {
+      margin-left: -2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    .header-content {
+        width: 6.063rem;
+        // margin-right: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header-content {
+    margin-left: 0;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  body {
+      overflow-x: hidden;
+      .land-each-item {
+          min-width: 100%;
+          min-height: 15.125rem;
+          overflow: hidden;
+          border-radius: 0.938rem !important;
+          padding-right: 0.938rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+      }
+      .navbar-nav {
+          margin-left: 71.5rem;
+      }
   }
 }
