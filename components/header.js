@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Router from 'next/router';
 import { Component } from 'react'
 import { Navbar, Nav, NavDropdown, Modal } from 'react-bootstrap';
+import { myService } from "../properties/services";
 
 class Header extends Component {
     constructor(props) {
@@ -10,6 +11,22 @@ class Header extends Component {
             highlight: '',
             highlight1: '',
             highlight2: 'active'
+        }
+    }
+
+    componentDidMount() {
+        this.subscribe = myService.getHighlight().subscribe((res) => {
+            if (res) {
+                if(res === 'mystory') {
+                    this.setState ({ highlight: 'active', highlight1: '', highlight2: '' })
+                }
+            }
+        });
+    }
+
+    componentWillUnmount() {
+        if(this.subscribe) {
+            this.subscribe.unsubscribe();
         }
     }
 
