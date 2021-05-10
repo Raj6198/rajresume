@@ -15,10 +15,22 @@ class Header extends Component {
     }
 
     componentDidMount() {
+        if(localStorage.getItem('highlight')) {
+            let data = localStorage.getItem('highlight');
+            if(data === 'myStory') {
+                this.setState ({ highlight: 'active', highlight1: '', highlight2: '' });
+            } else if(data === "contact") {
+                this.setState ({ highlight: '', highlight1: 'active', highlight2: '' });
+            }
+        }
         this.subscribe = myService.getHighlight().subscribe((res) => {
             if (res) {
-                if(res === 'mystory') {
-                    this.setState ({ highlight: 'active', highlight1: '', highlight2: '' })
+                if(res === 'myStory') {
+                    this.setState ({ highlight: 'active', highlight1: '', highlight2: '' });
+                    localStorage.setItem('highlight', 'myStory');
+                } else if(res === 'contact') {
+                    this.setState ({ highlight: '', highlight1: 'active', highlight2: '' });
+                    localStorage.setItem('highlight', 'contact');
                 }
             }
         });

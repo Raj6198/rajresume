@@ -13,6 +13,7 @@ class mystory extends Component {
 
   componentDidMount() {
     myService.sentHighlight('myStory');
+    localStorage.setItem('highlight', 'myStory');
   }
 
   render() {
