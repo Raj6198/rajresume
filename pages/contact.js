@@ -12,7 +12,11 @@ class contact extends Component {
   render() {
     return (
       <Layout>
-        
+        <div className="parent-container">
+          <div className="row">
+
+          </div>
+        </div>
       </Layout>
     );
   }

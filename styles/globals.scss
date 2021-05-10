@@ -30,6 +30,9 @@ html,body {
 @media screen and (min-width: 1200px) and (max-width: 1399px){
   html,body{
       font-size: 12px;
+      .navbar-nav {
+        margin-left: 74.5rem;
+      }
   } 
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px){
