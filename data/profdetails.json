@@ -1,0 +1,63 @@
+{
+    "Professional_details" : {
+        "status" : true,
+        "object" : [
+            {
+                "id": 1,
+                "val": "2 year of extensive experience as Software Developer."
+            },
+            {
+                "id": 2,
+                "val": "Developed, enhanced, and debugged software applications that support external clients as well as internal business units or supporting functions."
+            },
+            {
+                "id": 4,
+                "val": "Helped Post Production support and bug fixes."
+            },
+            {
+                "id": 5,
+                "val": "Implemented and tested core components."
+            },
+            {
+                "id": 6,
+                "val": "Interfaced with internal/external mobile development and web development teams from a technical and design perspective."
+            },
+            {
+                "id": 7,
+                "val": "Maintained code quality across multiple mobile software development environments."
+            },
+            {
+                "id": 8,
+                "val": "Participated in the design, development, and implementation of complex server and mobile based websites."
+            },
+            {
+                "id": 9,
+                "val": "Profiled and helped optimize the code to get the best possible performance across various devices."
+            },
+            {
+                "id": 10,
+                "val": "Researched and validated key technology decisions for our core applications and customer facing offerings."
+            },
+            {
+                "id": 11,
+                "val": "Supported system integration, component integration and user acceptance testing."
+            },
+            {
+                "id": 12,
+                "val": "Supported, maintained, and tested software applications that support external clients as well as internal business units or supporting functions."
+            },
+            {
+                "id": 13,
+                "val": "Worked closely with designers and other developers to expand, and tune our product offering for the mobile arena."
+            },
+            {
+                "id": 14,
+                "val": "Worked with user testing team to ensure smooth deployment of product releases and updates."
+            },
+            {
+                "id": 15,
+                "val": "Worked with senior team members to define technical scope of products and their features."
+            }
+        ]
+    }
+}

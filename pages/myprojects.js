@@ -24,7 +24,7 @@ class myprojects extends Component {
     return (
       <Layout>
         <div className="parent-container">
-          <div style={{ backgroundImage: "url(/static/images/myproject.jpg)" }} className="row landing-myprojects">
+          <div style={{ backgroundImage: "url(/static/images/myproject.jpg)"}} className="row landing-myprojects">
             <div className="col-lg-6 offset-xl-1 d-flex myprojects align-items-center p-lg-0 px-3">
               <div className="col-lg-8 p-0">
                 <div className="row m-0">

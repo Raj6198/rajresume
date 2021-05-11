@@ -129,6 +129,40 @@ body {
               padding: 0.25rem 0.625rem;
               border-radius: 0.25rem;
           }
+          .second-span{
+            color:rgb(21, 92, 224);
+            cursor: pointer
+          }
+      }
+    }
+    .prof-content {
+      color: #e42323;
+      margin-top: 90px;
+      .banner-text-animation{
+          height: 19rem;
+      }
+      h1 {
+          font-size: 3.5rem;
+          font-weight: 700;
+      }
+      .prof-spac{
+        animation-name: lineheight-expand;
+        -webkit-animation-name: lineheight-expand;
+        animation-duration: 12s;
+        -webkit-animation-duration: 12s;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        display: inline-block;
+        line-height:4.5rem;
+      }
+      p {
+          color:rgba(215, 61, 84, 1);
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+          font-weight: 400;
+          margin-top: 15px;
+          width: 180%;
+          margin-left: 30px;
       }
     }
   }
@@ -144,7 +178,7 @@ body {
   .landing-myprojects {
     min-height: calc(110vh - 5rem);
     height: 100%;
-    background-color: #e0e4ce;
+    background-color: #2c2e28;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: initial;
