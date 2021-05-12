@@ -60,7 +60,6 @@ html,
 body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 html .landing-banner,
@@ -169,6 +168,52 @@ body .landing-banner .home-content p .first-span {
   border-radius: 0.25rem;
 }
 
+html .landing-banner .home-content p .second-span,
+body .landing-banner .home-content p .second-span {
+  color: #155ce0;
+  cursor: pointer;
+}
+
+html .landing-banner .prof-content,
+body .landing-banner .prof-content {
+  color: #e42323;
+  margin-top: 90px;
+}
+
+html .landing-banner .prof-content .banner-text-animation,
+body .landing-banner .prof-content .banner-text-animation {
+  height: 19rem;
+}
+
+html .landing-banner .prof-content h1,
+body .landing-banner .prof-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+html .landing-banner .prof-content .prof-spac,
+body .landing-banner .prof-content .prof-spac {
+  animation-name: lineheight-expand;
+  -webkit-animation-name: lineheight-expand;
+  animation-duration: 12s;
+  -webkit-animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  display: inline-block;
+  line-height: 4.5rem;
+}
+
+html .landing-banner .prof-content p,
+body .landing-banner .prof-content p {
+  color: #d73d54;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+  width: 180%;
+  margin-left: 30px;
+}
+
 html .my-story,
 body .my-story {
   min-height: calc(110vh - 5rem);
@@ -180,11 +225,16 @@ body .my-story {
   overflow: hidden;
 }
 
+html .my-story .textArea,
+body .my-story .textArea {
+  width: 100%;
+}
+
 html .landing-myprojects,
 body .landing-myprojects {
   min-height: calc(110vh - 5rem);
   height: 100%;
-  background-color: #f2f3ec;
+  background-color: #2c2e28;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
@@ -253,6 +303,72 @@ body .navbar .navbar-nav .nav-link:hover:after {
   width: 100%;
 }
 
+html .contactus,
+body .contactus {
+  margin-bottom: 20rem;
+}
+
+html .contactus h1,
+body .contactus h1 {
+  font-size: 2.0rem;
+  color: #c04545;
+}
+
+html .contactus h3,
+body .contactus h3 {
+  margin-left: 9.5rem !important;
+  font-size: 2.125rem;
+  font-weight: 500;
+  color: #4913dd;
+  line-height: 2rem;
+}
+
+html .myprojects,
+body .myprojects {
+  margin-top: 7rem;
+}
+
+html .myprojects h1,
+body .myprojects h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #eec6c6;
+}
+
+html .myprojects dt,
+body .myprojects dt {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #eeecf4;
+}
+
+html .myprojects dt::after,
+body .myprojects dt::after {
+  content: ":";
+}
+
+html .myprojects dd,
+body .myprojects dd {
+  position: relative;
+  bottom: 25px;
+  width: 80rem;
+  font-size: 1.3rem;
+  margin: 0 0 0 200px;
+  padding: 0 0 0.8em 0;
+  color: #f1e0be;
+}
+
+html .myprojects hr,
+body .myprojects hr {
+  width: 100rem;
+  background-color: #e41717;
+}
+
+html .myprojects .textArea,
+body .myprojects .textArea {
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   .navbar .header-content {
     width: 6.063rem;
@@ -300,7 +416,7 @@ body .navbar .navbar-nav .nav-link:hover:after {
     background-position: center;
   }
   body .navbar-nav {
-    margin-left: 65.5rem;
+    margin-left: 60.5rem;
   }
 }
 /*# sourceMappingURL=globals.css.map */
