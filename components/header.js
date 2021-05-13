@@ -89,7 +89,7 @@ class Header extends Component {
                             </Navbar.Brand>
                             <Navbar.Collapse id="basic-navbar-nav" className="col-md-10 col-lg-11 pr-0">
                                 <Nav className="mr-auto">
-                                    <Nav.Link className={this.state.highlight} onClick={this.routeStory}>Form Validation</Nav.Link>
+                                    <Nav.Link className={this.state.highlight} onClick={this.routeStory}>My story</Nav.Link>
                                     <Nav.Link className={this.state.highlight3} onClick={this.routeProject}>My Projects</Nav.Link>
                                     <Nav.Link className={this.state.highlight1} onClick={this.routeContact}>Contact</Nav.Link>
                                     <Nav.Link className={this.state.highlight2} onClick={this.routerHome}>Welcome! Raj</Nav.Link>
